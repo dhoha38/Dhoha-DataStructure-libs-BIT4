@@ -1,3 +1,5 @@
+/// /////////l1
+
 package Arrays;
 
 import java.util.Scanner;
@@ -23,4 +25,53 @@ public class Arrayss {
 
 
 
+
+//////////////l2
+
+
+
+
+    public  void  update (int [] a , int index , int nvalue){
+        if (index<0 || index>=a.length)
+            System.out.println("Index Doesn't exist");
+        else
+            a[index]=nvalue;
+    }
+
+    public  void  delete (int [] a , int index ){
+        if (index<0 || index>=a.length)
+            System.out.println("Index Doesn't exist");
+        else
+            a[index]=0;
+    }
+
+ /////////L3 ShiftLeft_Delete
+    public void  ShiftLeft_Delete(int []a , int intex){
+        for (int i=intex ; i<a.length-1 ; i++){
+            a[i]=a[i+1];
+
+            a[a.length-1]=Integer.MIN_VALUE;
+        }
+    }
+
+////////// L3(hw ShiftRight_Delete )
+public void ShiftRight_Delete(int[] a, int index) {
+    for (int i = index; i > 0; i--) {
+        a[i] = a[i - 1];
+    }
+    a[0] = Integer.MIN_VALUE;
 }
+
+/////////////l4 LinearSearch
+    public int LinearSearch(int[]a , int svalue){
+        for (int i=0; i<a.length ; i++){
+            if(svalue==a[i])
+                return -1;
+
+        }
+        return -1;
+    }
+}
+
+
+
