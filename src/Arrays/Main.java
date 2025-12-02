@@ -18,15 +18,17 @@ public class Main {
 
 //////L3
         arr.ShiftLeft_Delete(numbers,0);
+        arr.ShiftRight_Insert(numbers, 1,1);
 
 /////////////l4
         int result= arr.LinearSearch(numbers, 6);
-        if(result!=1)
+        if(result!=-1)
         System.out.println("the value is : "+ result);
         else
             System.out.println("The value not found");
 
-
     }
+
+///////l5
 
 }

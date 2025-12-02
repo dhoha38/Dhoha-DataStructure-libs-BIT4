@@ -54,16 +54,17 @@ public class Arrayss {
         }
     }
 
-////////// L3(hw ShiftRight_Delete )
-public void ShiftRight_Delete(int[] a, int index) {
-    for (int i = index; i > 0; i--) {
+////////// L3(hw ShiftRight_Insert )
+public void ShiftRight_Insert(int[] a, int index, int value) {
+    for (int i = a.length - 1; i > index; i--) {
         a[i] = a[i - 1];
     }
-    a[0] = Integer.MIN_VALUE;
+    a[index] = value;
 }
 
+
 /////////////l4 LinearSearch
-    public int LinearSearch(int[]a , int svalue){
+  public int LinearSearch(int[]a , int svalue){
         for (int i=0; i<a.length ; i++){
             if(svalue==a[i])
                 return -1;
@@ -71,6 +72,11 @@ public void ShiftRight_Delete(int[] a, int index) {
         }
         return -1;
     }
+
+///////////l5
+
+
+
 }
 
 
