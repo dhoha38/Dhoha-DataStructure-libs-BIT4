@@ -1,5 +1,4 @@
 /// /////////l1
-
 package Arrays;
 
 import java.util.Scanner;
@@ -23,14 +22,7 @@ public class Arrayss {
 
         }
 
-
-
-
 //////////////l2
-
-
-
-
     public  void  update (int [] a , int index , int nvalue){
         if (index<0 || index>=a.length)
             System.out.println("Index Doesn't exist");
@@ -74,7 +66,24 @@ public void ShiftRight_Insert(int[] a, int index, int value) {
     }
 
 ///////////l5
+public int BinarySearch(int []a,int findex,int lindex,int svalue)
+{
+    //{1,2,3,4,5,6}  4
+    while (findex<=lindex){
 
+        int mid=(findex+lindex)/2;
+        if (svalue==a[mid])
+            return mid;
+        if(svalue<a[mid])
+            lindex=mid-1;
+        if(svalue>a[mid])
+            findex=mid+1;
+
+    }
+
+    return -1;
+
+}
 
 
 }
