@@ -84,6 +84,8 @@ public int BinarySearch(int []a,int findex,int lindex,int svalue)
     return -1;
 
 }
+/// //l6
+
 
 
 }
